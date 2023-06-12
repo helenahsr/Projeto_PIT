@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    font-size: 100%;
+    background: #0E3032;
+}
+.cabecalho{
+    max-width: 1000px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+
+}
+.cabecalho-imagem{
+    height: 100px;
+}
+
+
+.cabecalho-menu{
+    display: flex;
+    gap:32px;
+}
+
+.cabecalho-menu-item{
+    font-family: 'Acme';
+    color: #FFF2E7;
+    font-weight: 400;
+    font-size: 20px;
+}
+.conteudo{
+    margin-bottom: 48px;
+    border-top: 0.4px solid #FFF2E7;
+}
+
+.conteudo-principal{
+    max-width: 1200px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-principal-escrito{
+    font-family: 'Acme';
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteudo-principal-escrito-titulo{
+    font-size: 6vw;
+    font-family: 'Acme', cursive;
+    font-weight: 400;
+    font-size: 64px;
+    color: #780500;
+}
+
+.conteudo-principal-escrito-subtitulo{
+    font-size: 3vw;
+    font-family: 'Acme', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #ECD6C4;
+}
+
+.conteudo-principal-escrito-botao{
+    background-color:#5DB0E4;
+    width: 180px;
+    height: 50px;
+    border: none;
+    box-shadow: 4px 5px 4px (0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Acme', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #000;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 25%;
+    
+}
+
+.conteudo-principal-escrito-botao:hover{
+    background-color: #6198b9;
+}
+
+.conteudo-principal-imagem{
+    padding-top: 20px;
+    height: 300px;
+}
+
+.conteudo-secundario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.conteudo-secundario-titulo{
+    border-top: 0.4px solid #FFF2E7;
+    padding-top: 48px;
+    font-family: 'Acme', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFF2EF;
+    margin-bottom: 16px;
+}
+
+.conteudo-secundario-paragrafo {
+    font-family: 'Acme', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #ECD6C4;
+  }
+  /*PÁGINAS DE CADASTRO*/
+  div.box {
+    margin:0 auto;
+    width:500px;
+    background:#fcf4a6;
+    position:relative;
+    top:50px;
+    border:1px solid #fcf4a6;
+    right:25%;
+    left: 0;
+}
+
+div.box h1 {
+    color:#000;
+    font-size:18px;
+    text-transform:uppercase;
+    padding:5px 0 5px 5px;
+    border-bottom:1px solid #fcf4a6;
+    border-top:1px solid #fcf4a6;
+}
+
+div.box label {
+    width:100%;
+    display: block;
+    background:#fcf4a6;
+    border-top:1px solid #fcf4a6;
+    border-bottom:1px solid #fcf4a6;
+    padding:10px 0 10px 0;
+}
+
+div.box label span {
+    display: block;
+    color:#000;
+    font-size:12px;
+    float:left;
+    width:100px;
+    text-align:right;
+    padding:5px 20px 0 0;
+}
+
+div.box .input_text {
+    font-family: Acme;
+    border: solid 0px;
+    border-bottom: solid 1px;
+    background-color: transparent;
+    font-size: 22px;
+    width: 200px;
+}
+
+label span {
+    font-family: Acme;
+    font-size: 24px;
+}
+
+.imagem-formulario{
+    display: flex;
+    right: 30%;
+  
+}
+
+select {
+	width: 200px;
+	background-color: transparent;
+	border: solid 0px;
+	border-bottom: solid 1px;
+	font-size: 22px;
+	font-family: Acme;
+    
+}
+
+.portepet {
+    width: 200px;
+    font-size: 18px;
+    font-family: Acme;
+}
+ 
+ 
+  /*RESPONSIVIDADE*/
+  @media screen and (max-width: 950px) {
+    .conteudo-principal-imagem {
+        width: 40vw;
+    }
+   
+}
+
+@media screen and (max-width: 870px) {
+    .conteudo-principal-escrito-titulo{
+        margin: 0.10;
+        text-align: center;
+    }
+    .conteudo-secundario-paragrafo {
+        margin: 0 10px;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .cabecalho {
+        background-color: #0E3032;
+        padding: 45px 25px 45px;
+    }
+
+    .cabecalho-menu-item {
+        color: #FFF2E7;
+        font-weight: 'Acme';
+    }
+
+    .cabecalho-imagem {
+        display: flex;
+        justify-content: center;
+    }
+    .conteudo-principal-imagem{
+        display: none;
+    }
+
+    .conteudo-principal {
+        display: initial;
+    }
+
+    .conteudo-principal-escrito-botao {
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+
+    }
+
+    .conteudo-principal-escrito {
+        margin: 20px 10px 0;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .cabecalho-menu {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+}
+@media screen and (max-width: 700px) {
+    .conteudo-principal-escrito-botao{
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+}
