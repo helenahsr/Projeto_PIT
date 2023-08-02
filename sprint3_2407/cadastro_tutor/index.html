@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <title>Cadastre-se - Patinhas</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="../img/logo.png" alt="Patinhas Felizes">
+            </div>
+            <div class="nav-bar">
+                <ul>
+                    <li><a href="../landing_page/index.html">Home</a></li>
+                    <li><a href="../cadastro_tutor/index.html">Seja um Voluntário</a></li>
+                    <li><a href="../cadastro_user/cadastro.html">Cadastre-se</a></li>
+                    <li><a href="../login/login.html">Login</a></li>
+                    <li><a href="../info_pages/cuidados.html">Saiba Mais</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <div class="container-form">
+                <div class="container-dados">
+                    <label for="Cadastrar"><b>Seja um tutor</b></label><br>
+                    <form name="meuForm" action="cadastro.php" method="post" id="formulario">
+                        <div class="box">
+                            <label>
+                                <span>CPF:</span>
+                                <input type="text" class="input_text" maxlength="14" id="cpf" value="" name="cpf" onkeydown="javascript: fMasc( this, mCPF );" required>
+                            </label><br><br>
+        
+                            <label>
+                                <span>Nome:</span>
+                                <input type="text" class="input_text" name="nome" id="name" maxlength="180" required>
+                            </label><br><br>
+        
+                            <label>
+                                <span>Email:</span>
+                                <input type="email" class="input_text" name="email" id="email" maxlength="255" required>
+                            </label><br><br>
+        
+                            <label>
+                                <span>Telefone:</span>
+                                <input type="text" class="input_text" name="telefone" id="tel" maxlength="15" oninput="tMasc()" required>
+                            </label><br><br>
+        
+                            <label>
+                                <span>Cidade:</span>
+                                <input type="text" class="input_text" name="cidade" id="subject" maxlength="120" required>
+                            </label><br><br>
+        
+                            <label>
+                                <span>Senha:</span>
+                                <input type="password" class="input_text" name="senha" id="subject" maxlength="30" required><br><br>
+        
+                                <input type="submit" class="conteudo-principal-escrito-botao" name="cadastrar" value="Cadastrar"/>
+                            </label><br><br>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
