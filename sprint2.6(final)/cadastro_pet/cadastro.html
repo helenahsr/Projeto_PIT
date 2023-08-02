@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <title>Cadastre um Pet - Patinhas</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="../img/logo.png" alt="Patinhas Felizes">
+            </div>
+            <div class="nav-bar">
+                <ul>
+                    <li><a href="../landing_page/index.html">Home</a></li>
+                    <li><a href="../cadastro_tutor/index.html">Seja um Voluntário</a></li>
+                    <li><a href="../cadastro_user/cadastro.html">Cadastre-se</a></li>
+                    <li><a href="../login/login.html">Login</a></li>
+                    <li><a href="../info_pages/cuidados.html">Saiba Mais</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <div class="container-form">
+                <div class="container-dados">
+                    <label for="Cadastrar"><b>Cadastre um pet para adoção</b></label><br>
+                    <form name="meuForm" action="cadastros.php" method="post" id="formulario" enctype="multipart/form-data">
+                        <div class="box">
+                            <label>
+                                <span>Nome:</span>
+                                <input type="text" class="input_text" name="nome" id="name" />
+                            </label><br><br>
+        
+                            <label>
+                                <span>Raça:</span>
+                                <input type="text" class="input_text" name="raca" id="subject" />
+                            </label><br><br>
+        
+                            <label>
+                                <span>Porte:</span>
+                                <select name="porte">
+                                    <option class="portepet" value="Pequeno">Pequeno</option>
+                                    <option class="portepet" value="Médio">Médio</option>
+                                    <option class="portepet" value="Grande">Grande</option>
+                                    <option class="portepet"></option>
+                                </select>
+                            </label><br><br>
+        
+                            <label>
+                                <span>Idade:</span>
+                                <input type="number" class="input_text" name="idade" id="subject" />
+                            </label><br><br>
+
+                            <label>
+                                <span>Dono:</span>
+                                <input type="text" class="input_text" name="ong" id="subject" />
+                                
+                            </label><br><br>
+        
+                            <label>
+                                <span>Histórico Veterinário (PDF):</span>
+                                <input type="file" name="pdf" id="pdf">
+        
+                                <input type="submit" class="conteudo-principal-escrito-botao" name="cadastroadopt" value="Cadastrar" />
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

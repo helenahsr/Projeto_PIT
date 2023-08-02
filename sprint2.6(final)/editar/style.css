@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Acme', sans-serif;
+}
+
+body {
+    background-color: #262626;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "h h"
+                        "m s";
+}
+
+header {
+    grid-area: h;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main {
+    grid-area: m;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    grid-area: s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    padding: 10px
+}
+
+.img-user {
+    width: 100%;
+}
+
+main img {
+    border-radius: 50%;
+    width: 50%;
+}
+
+main div {
+    font-size: 20px;
+    padding-top: 5px;
+    color: white;
+}
+
+.container-form {
+    background-color: white;
+    width: 80%;
+    height: 80vh;
+    padding: 20px;
+}
+
+.container-dados {
+    background-color: #FCF4A6;
+    height: 100%;
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+label {
+    font-size: 24px;
+}
+
+.texto {
+    width: 500px;
+    font-size: 24px;
+    border: none;
+    border-bottom: solid 1px black;
+    margin-left: 10px;
+    background-color: transparent;
+}
+
+.caixa {
+    display: flex;
+}
+
+li {
+    display: inline-block;
+    margin-left: 25px;
+    color: white;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.perfil img {
+    width: 10%;
+    border-radius: 50%;
+    margin-left: 25px;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.username {
+    font-size: 20px;
+    color: white;
+}
+
+.username a:hover {
+    border-bottom: solid 1px white;
+}
+
+.nome-usuario {
+    font-size: 24px;
+}
+
+input {
+    color: red;
+}
+
+.botao {
+    width: 200px;
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    border-radius: 15px;
+    background-color: #F25C05;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.botao:hover {
+    background-color: rgb(211, 79, 2);
+}
+
+form {
+    text-align: center;
+}

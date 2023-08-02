@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Acme', sans-serif;
+}
+
+body {
+    background-color: #262626;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "h"
+                        "m";
+}
+
+header {
+    grid-area: h;
+    display: flex;
+    align-items: center;
+}
+
+main {
+    grid-area: m;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    padding: 10px;
+}
+
+.container-form {
+    background-color: white;
+    width: 45%;
+    height: 85vh;
+    padding: 20px;
+}
+
+.container-dados {
+    background-color: #FCF4A6;
+    height: 100%;
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+label {
+    font-size: 24px;
+    width: 400px;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    margin-left: 25px;
+    color: white;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover {
+    border-bottom: solid 1px white;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input_text {
+    border: solid 0px;
+    border-bottom: solid 1px;
+    background-color: transparent;
+    font-size: 22px;
+    width: 300px;
+}
+
+.conteudo-principal-escrito-botao{
+    background-color:#5DB0E4;
+    width: 180px;
+    height: 50px;
+    border: none;
+    box-shadow: 4px 5px 4px (0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Acme', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #000;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.conteudo-principal-escrito-botao:hover{
+    background-color: #6198b9;
+}
+
+label label {
+    width: 100px;
+}
+
+select {
+	width: 300px;
+	background-color: transparent;
+	border: solid 0px;
+	border-bottom: solid 1px;
+	font-size: 22px;
+	font-family: Acme;
+    
+}
+
+.portepet {
+    width: 200px;
+    font-size: 18px;
+    font-family: Acme;
+}
