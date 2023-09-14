@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Fonte Acme -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <!-- Fonte Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Inter&display=swap" rel="stylesheet">
+    <!--Link da Favicon-->
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <!--Link do CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Cadastre um pet para adoção - Patinhas Felizes</title>
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <img src="../img/logo.png" alt="Patinhas Felizes">
+            <ul>
+                <li><a href="./index.html">Início</a></li>
+                <li><a href="../wikiPet/index.html">Wiki Pet</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+        <div class="login">
+            <ul>
+                <li><a href="../cadastro_usuario/index.html">Cadastre-se</a></li>
+                <li><a href="../login/index.html">Faça login</a></li>
+            </ul>
+    </header>
+    <main class="cadastro">
+        <div class="containerForm perdido">
+            <form class="acme formCadastro" method="POST" action="../php/cadastroAdocao.php">
+                <div class="tituloForm">Cadastre um pet para adoção</div>
+                <div class="formInput" id="arreda">
+                    <label for="nomePet">Nome do Pet</label><br>
+                    <input type="text" name="nomePet" maxlength="20" required>
+                </div>
+                <div class="formInput">
+                    <label for="idadePet">Idade do Pet</label><br>
+                    <input type="number" name="idadePet" id="idadePet" required>
+                </div>
+                <div class="formInput">
+                    <label for="racaPet">Raça do Pet</label><br>
+                    <input type="text" name="racaPet" id="racaPet" maxlength="50" required>
+                </div>
+                <div class="formInput select">
+                    <label for="portePet">Porte do Pet</label>
+                    <select name="portePet">
+                        <option class="porte" value="Pequeno">Pequeno</option>
+                        <option class="porte" value="Médio">Médio</option>
+                        <option class="porte" value="Grande">Grande</option>
+                    </select>
+                </div>
+                <div class="formInput select">
+                    <label for="sexoPet">Sexo do Pet</label><br>
+                    <select name="sexoPet">
+                        <option class="sexo" value="Macho">Macho</option>
+                        <option class="sexo" value="Femêa">Femêa</option>
+                    </select>
+                </div>                                
+                <div class="formInput">
+                    <label for="responsavel">Responsável</label><br>
+                    <input type="text" name="responsavel" id="responsavel" maxlength="180" required>
+                </div>     
+                <div class="formInput">
+                    <label for="email">E-mail do Responsável</label><br>
+                    <input type="email" name="email" id="email" maxlength="255" required>
+                </div> 
+                <div class="formInput">
+                    <label for="telefone">Telefone</label><br>
+                    <input type="text" name="telefone" id="tel" maxlength="15" oninput="tMasc()" required>
+                </div>
+                <div class="formInput">
+                    <label for="regiao">Região</label><br>
+                    <input type="text" name="regiao" id="regiao" maxlength="255" required>
+                </div>                  
+                <div class="formInput">
+                    <label for="descricao">Descrição</label><br>
+                    <textarea maxlength="255" class="inter" name="descricao" id="descricao" cols="30" rows="3" required></textarea>
+                </div>
+                <div class="formInput">
+                    <label for="imagem">Imagem do Pet (link da imagem)</label><br>
+                    <input type="text" name="imagem" id="imagem" required>
+                </div>
+                <div class="formButton">
+                    <button type="submit" name="cadastrar">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="acme branco">
+        Feito pelo time incrível do ©️ Patinhas Felizes - 2023
+    </footer>
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
